@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8737CE311BEAA59B004D07C8 /* HoofersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8737CE301BEAA59B004D07C8 /* HoofersButton.swift */; };
+		8737CE331BEAB8E3004D07C8 /* HoofersCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8737CE321BEAB8E3004D07C8 /* HoofersCalenderViewController.swift */; };
+		879059641BEC0F7C003916F3 /* SnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879059631BEC0F7C003916F3 /* SnsViewController.swift */; };
+		879059661BEC102F003916F3 /* OutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879059651BEC102F003916F3 /* OutingViewController.swift */; };
+		879059681BEC10D9003916F3 /* SailingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879059671BEC10D9003916F3 /* SailingViewController.swift */; };
+		8790596A1BEC117F003916F3 /* ScubaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879059691BEC117F003916F3 /* ScubaViewController.swift */; };
+		8790596C1BEC11FF003916F3 /* ClimbingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790596B1BEC11FF003916F3 /* ClimbingViewController.swift */; };
+		8790596E1BEC1210003916F3 /* RidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8790596D1BEC1210003916F3 /* RidingViewController.swift */; };
 		87CC0A8F1BEA71CA00649AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0A8E1BEA71CA00649AF7 /* AppDelegate.swift */; };
 		87CC0A911BEA71CA00649AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0A901BEA71CA00649AF7 /* ViewController.swift */; };
 		87CC0A941BEA71CA00649AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CC0A921BEA71CA00649AF7 /* Main.storyboard */; };
@@ -14,6 +22,7 @@
 		87CC0A991BEA71CA00649AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CC0A971BEA71CA00649AF7 /* LaunchScreen.storyboard */; };
 		87CC0AA41BEA71CB00649AF7 /* Wisconsin_HoofersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0AA31BEA71CB00649AF7 /* Wisconsin_HoofersTests.swift */; };
 		87CC0AAF1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0AAE1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift */; };
+		87CC0ABD1BEA722F00649AF7 /* ClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0ABC1BEA722F00649AF7 /* ClubCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8737CE301BEAA59B004D07C8 /* HoofersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoofersButton.swift; sourceTree = "<group>"; };
+		8737CE321BEAB8E3004D07C8 /* HoofersCalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoofersCalenderViewController.swift; sourceTree = "<group>"; };
+		879059631BEC0F7C003916F3 /* SnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnsViewController.swift; sourceTree = "<group>"; };
+		879059651BEC102F003916F3 /* OutingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutingViewController.swift; sourceTree = "<group>"; };
+		879059671BEC10D9003916F3 /* SailingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SailingViewController.swift; sourceTree = "<group>"; };
+		879059691BEC117F003916F3 /* ScubaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScubaViewController.swift; sourceTree = "<group>"; };
+		8790596B1BEC11FF003916F3 /* ClimbingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimbingViewController.swift; sourceTree = "<group>"; };
+		8790596D1BEC1210003916F3 /* RidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidingViewController.swift; sourceTree = "<group>"; };
 		87CC0A8B1BEA71CA00649AF7 /* Wisconsin Hoofers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wisconsin Hoofers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CC0A8E1BEA71CA00649AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CC0A901BEA71CA00649AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,7 @@
 		87CC0AAA1BEA71CB00649AF7 /* Wisconsin HoofersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wisconsin HoofersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CC0AAE1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisconsin_HoofersUITests.swift; sourceTree = "<group>"; };
 		87CC0AB01BEA71CB00649AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87CC0ABC1BEA722F00649AF7 /* ClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		879059601BEBAA0D003916F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		87CC0A821BEA71CA00649AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 				87CC0AA21BEA71CB00649AF7 /* Wisconsin HoofersTests */,
 				87CC0AAD1BEA71CB00649AF7 /* Wisconsin HoofersUITests */,
 				87CC0A8C1BEA71CA00649AF7 /* Products */,
+				879059601BEBAA0D003916F3 /* Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +126,15 @@
 				87CC0A8E1BEA71CA00649AF7 /* AppDelegate.swift */,
 				87CC0A901BEA71CA00649AF7 /* ViewController.swift */,
 				87CC0A921BEA71CA00649AF7 /* Main.storyboard */,
+				8790596B1BEC11FF003916F3 /* ClimbingViewController.swift */,
+				8790596D1BEC1210003916F3 /* RidingViewController.swift */,
+				879059691BEC117F003916F3 /* ScubaViewController.swift */,
+				879059671BEC10D9003916F3 /* SailingViewController.swift */,
+				879059651BEC102F003916F3 /* OutingViewController.swift */,
+				879059631BEC0F7C003916F3 /* SnsViewController.swift */,
+				8737CE321BEAB8E3004D07C8 /* HoofersCalenderViewController.swift */,
+				8737CE301BEAA59B004D07C8 /* HoofersButton.swift */,
+				87CC0ABC1BEA722F00649AF7 /* ClubCell.swift */,
 				87CC0A951BEA71CA00649AF7 /* Assets.xcassets */,
 				87CC0A971BEA71CA00649AF7 /* LaunchScreen.storyboard */,
 				87CC0A9A1BEA71CA00649AF7 /* Info.plist */,
@@ -259,8 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879059661BEC102F003916F3 /* OutingViewController.swift in Sources */,
+				8790596C1BEC11FF003916F3 /* ClimbingViewController.swift in Sources */,
+				8737CE311BEAA59B004D07C8 /* HoofersButton.swift in Sources */,
+				8790596A1BEC117F003916F3 /* ScubaViewController.swift in Sources */,
 				87CC0A911BEA71CA00649AF7 /* ViewController.swift in Sources */,
+				87CC0ABD1BEA722F00649AF7 /* ClubCell.swift in Sources */,
+				879059681BEC10D9003916F3 /* SailingViewController.swift in Sources */,
+				879059641BEC0F7C003916F3 /* SnsViewController.swift in Sources */,
+				8737CE331BEAB8E3004D07C8 /* HoofersCalenderViewController.swift in Sources */,
 				87CC0A8F1BEA71CA00649AF7 /* AppDelegate.swift in Sources */,
+				8790596E1BEC1210003916F3 /* RidingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -389,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -400,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Wisconsin Hoofers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CormickHnilicka.Wisconsin-Hoofers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wisconsin Hoofers/Wisconsin Hoofers-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,10 +458,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "GTM_USE_SESSION_FETCHER=1";
 				INFOPLIST_FILE = "Wisconsin Hoofers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CormickHnilicka.Wisconsin-Hoofers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wisconsin Hoofers/Wisconsin Hoofers-Bridging-Header.h";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "gtm-session-fetcher/Source/ google-api-objectivec-client/Source/**";
 			};
 			name = Release;
 		};
@@ -485,6 +540,7 @@
 				87CC0AB51BEA71CB00649AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87CC0AB61BEA71CB00649AF7 /* Build configuration list for PBXNativeTarget "Wisconsin HoofersTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +549,7 @@
 				87CC0AB81BEA71CB00649AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87CC0AB91BEA71CB00649AF7 /* Build configuration list for PBXNativeTarget "Wisconsin HoofersUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +558,7 @@
 				87CC0ABB1BEA71CB00649AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
