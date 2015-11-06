@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JuE-Co-zpj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -43,6 +45,11 @@
                             <constraint firstItem="RGK-ps-fcy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sdb-z1-rJa"/>
                             <constraint firstItem="6Ll-fZ-bxR" firstAttribute="leading" secondItem="RGK-ps-fcy" secondAttribute="leading" id="wU3-7B-W74"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="F4A-Hx-Kl0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mKI-4g-t8c"/>
                 </viewController>
@@ -136,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="-651" y="1690"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Scroll Table View Controller-->
         <scene sceneID="O2X-OC-3f6">
             <objects>
-                <tableViewController id="Bdr-88-Ppd" sceneMemberID="viewController">
+                <tableViewController id="Bdr-88-Ppd" customClass="ScrollTableViewController" customModule="Wisconsin_Hoofers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="484" sectionHeaderHeight="28" sectionFooterHeight="28" id="sEU-SI-DUG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,30 +154,8 @@
                         <sections>
                             <tableViewSection id="4qw-bK-U0o">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="IUf-EM-s1Z" customClass="ClubCell" customModule="Wisconsin_Hoofers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IUf-EM-s1Z" id="2By-LI-AMY">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sns" translatesAutoresizingMaskIntoConstraints="NO" id="X7y-wD-785">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="X7y-wD-785" firstAttribute="leading" secondItem="2By-LI-AMY" secondAttribute="leading" id="H3b-LX-flj"/>
-                                                <constraint firstItem="X7y-wD-785" firstAttribute="top" secondItem="2By-LI-AMY" secondAttribute="top" id="Pkp-32-W2u"/>
-                                                <constraint firstAttribute="trailing" secondItem="X7y-wD-785" secondAttribute="trailing" id="U81-JJ-BzP"/>
-                                                <constraint firstAttribute="bottom" secondItem="X7y-wD-785" secondAttribute="bottom" id="deZ-19-L3x"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Woz-Wu-oZ7" kind="show" id="Ja2-NI-TQ0"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="2Yb-r3-sPJ" customClass="ClubCell" customModule="Wisconsin_Hoofers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="484" width="600" height="484"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Yb-r3-sPJ" id="63o-RK-ei5">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
@@ -179,6 +164,20 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outing" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-BB-wzA">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-bH-oCp">
+                                                    <rect key="frame" x="40" y="383" width="143" height="83"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V0i-yj-1z7">
+                                                    <rect key="frame" x="174" y="140" width="240" height="128"/>
+                                                    <color key="backgroundColor" red="0.52864583333333326" green="0.52864583333333326" blue="0.52864583333333326" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <string key="text">Hike, bike, kayak, canoe, and cross country ski with a great group of outdoor enthusiasts. Take advantage of lessons and organized trips to areas in Wisconsin and out west.</string>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="oDM-BB-wzA" secondAttribute="trailing" id="fbU-75-2dp"/>
@@ -189,6 +188,62 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="9fZ-Jz-UWn" kind="show" id="Vsx-54-Ma7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="IUf-EM-s1Z" customClass="ClubCell" customModule="Wisconsin_Hoofers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="484" width="600" height="484"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IUf-EM-s1Z" id="2By-LI-AMY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sns" translatesAutoresizingMaskIntoConstraints="NO" id="X7y-wD-785">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="484"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj0-g2-lHj">
+                                                    <rect key="frame" x="40" y="383" width="143" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="83" id="6lO-vw-Dwx"/>
+                                                        <constraint firstAttribute="width" constant="143" id="kyq-9R-3dE"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" minX="0.0" minY="78" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" backgroundImage="snslogo">
+                                                        <color key="titleColor" red="1" green="0.99564410189999997" blue="0.97568444170000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" red="1" green="0.99564410189999997" blue="0.97568444170000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="hideSnsInfo:" destination="Bdr-88-Ppd" eventType="touchUpInside" id="TyS-mb-7oD"/>
+                                                        <action selector="showSnsInfo:" destination="Bdr-88-Ppd" eventType="touchDown" id="IhL-Fm-4T8"/>
+                                                    </connections>
+                                                </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6S8-y0-jHM">
+                                                    <rect key="frame" x="155" y="52" width="272" height="395"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.83000000000000007" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="395" id="16Y-32-VI9"/>
+                                                        <constraint firstAttribute="width" constant="272" id="fs6-Sh-LKI"/>
+                                                    </constraints>
+                                                    <string key="text">Hit the slopes all winter long at local hills or rip down massive mountains out west on one of our winter break trips. On top of your game? join one of our competitive teams! Need some work? We do lessions too!</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X7y-wD-785" firstAttribute="leading" secondItem="2By-LI-AMY" secondAttribute="leading" id="H3b-LX-flj"/>
+                                                <constraint firstItem="6S8-y0-jHM" firstAttribute="leading" secondItem="X7y-wD-785" secondAttribute="trailing" constant="-445" id="HZH-XG-jal"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6S8-y0-jHM" secondAttribute="bottom" constant="29" id="NVW-nk-nrL"/>
+                                                <constraint firstItem="X7y-wD-785" firstAttribute="top" secondItem="2By-LI-AMY" secondAttribute="top" id="Pkp-32-W2u"/>
+                                                <constraint firstAttribute="trailing" secondItem="X7y-wD-785" secondAttribute="trailing" id="U81-JJ-BzP"/>
+                                                <constraint firstItem="6S8-y0-jHM" firstAttribute="leading" secondItem="Nj0-g2-lHj" secondAttribute="trailing" constant="-28" id="bcT-uw-Vga"/>
+                                                <constraint firstItem="6S8-y0-jHM" firstAttribute="width" secondItem="X7y-wD-785" secondAttribute="height" multiplier="68:121" id="d7C-AC-TFb"/>
+                                                <constraint firstAttribute="bottom" secondItem="X7y-wD-785" secondAttribute="bottom" id="deZ-19-L3x"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Nj0-g2-lHj" secondAttribute="bottom" constant="10" id="rI6-I2-XVd"/>
+                                                <constraint firstItem="Nj0-g2-lHj" firstAttribute="leading" secondItem="2By-LI-AMY" secondAttribute="leadingMargin" constant="32" id="vi2-aD-Aoe"/>
+                                                <constraint firstItem="6S8-y0-jHM" firstAttribute="centerX" secondItem="X7y-wD-785" secondAttribute="centerX" id="xEb-vM-RRD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Woz-Wu-oZ7" kind="show" id="Ja2-NI-TQ0"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="Rsg-Ly-wwj" customClass="ClubCell" customModule="Wisconsin_Hoofers" customModuleProvider="target">
@@ -287,6 +342,9 @@
                             <outlet property="delegate" destination="Bdr-88-Ppd" id="Bb0-2d-ptP"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="SnsInfo" destination="6S8-y0-jHM" id="tdv-oZ-pmR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXM-aF-Rpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,5 +510,6 @@
         <image name="sailing" width="952" height="1349"/>
         <image name="scuba" width="948" height="1349"/>
         <image name="sns" width="950" height="1349"/>
+        <image name="snslogo" width="222" height="222"/>
     </resources>
 </document>

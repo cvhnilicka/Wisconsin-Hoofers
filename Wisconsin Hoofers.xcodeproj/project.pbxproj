@@ -25,6 +25,7 @@
 		87CC0AA41BEA71CB00649AF7 /* Wisconsin_HoofersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0AA31BEA71CB00649AF7 /* Wisconsin_HoofersTests.swift */; };
 		87CC0AAF1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0AAE1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift */; };
 		87CC0ABD1BEA722F00649AF7 /* ClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC0ABC1BEA722F00649AF7 /* ClubCell.swift */; };
+		87F67A9A1BECF57F0075A8DB /* ScrollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F67A991BECF57F0075A8DB /* ScrollTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		87CC0AAE1BEA71CB00649AF7 /* Wisconsin_HoofersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisconsin_HoofersUITests.swift; sourceTree = "<group>"; };
 		87CC0AB01BEA71CB00649AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CC0ABC1BEA722F00649AF7 /* ClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCell.swift; sourceTree = "<group>"; };
+		87F67A991BECF57F0075A8DB /* ScrollTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTableViewController.swift; sourceTree = "<group>"; };
 		D29C94823B3C427C44CFE5ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				87CC0A8E1BEA71CA00649AF7 /* AppDelegate.swift */,
 				87CC0A901BEA71CA00649AF7 /* ViewController.swift */,
 				87CC0A921BEA71CA00649AF7 /* Main.storyboard */,
+				87F67A991BECF57F0075A8DB /* ScrollTableViewController.swift */,
 				8790596B1BEC11FF003916F3 /* ClimbingViewController.swift */,
 				8790596D1BEC1210003916F3 /* RidingViewController.swift */,
 				879059691BEC117F003916F3 /* ScubaViewController.swift */,
@@ -365,6 +368,7 @@
 				8790596A1BEC117F003916F3 /* ScubaViewController.swift in Sources */,
 				87CC0A911BEA71CA00649AF7 /* ViewController.swift in Sources */,
 				87CC0ABD1BEA722F00649AF7 /* ClubCell.swift in Sources */,
+				87F67A9A1BECF57F0075A8DB /* ScrollTableViewController.swift in Sources */,
 				879059681BEC10D9003916F3 /* SailingViewController.swift in Sources */,
 				879059641BEC0F7C003916F3 /* SnsViewController.swift in Sources */,
 				8737CE331BEAB8E3004D07C8 /* HoofersCalenderViewController.swift in Sources */,
@@ -511,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Wisconsin Hoofers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CormickHnilicka.Wisconsin-Hoofers";
@@ -526,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "GTM_USE_SESSION_FETCHER=1";
 				INFOPLIST_FILE = "Wisconsin Hoofers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

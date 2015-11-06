@@ -12,6 +12,7 @@ class SnsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = false;
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "sns.png")?.drawInRect(self.view.bounds)
         
@@ -20,7 +21,9 @@ class SnsViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
-        self.navigationController?.navigationBarHidden = false;
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true;
         // Do any additional setup after loading the view, typically from a nib.
     }
     

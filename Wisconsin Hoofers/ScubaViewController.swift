@@ -20,6 +20,9 @@ class ScubaViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true;
         // Do any additional setup after loading the view, typically from a nib.
     }
     

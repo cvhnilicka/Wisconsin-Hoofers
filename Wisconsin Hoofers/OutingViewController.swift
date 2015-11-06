@@ -9,6 +9,8 @@
 import UIKit
 
 class OutingViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = false;
@@ -20,9 +22,12 @@ class OutingViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true;
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -10,6 +10,8 @@ import UIKit
 
 class ClubCell: UITableViewCell {
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
